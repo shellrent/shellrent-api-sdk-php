@@ -26,6 +26,11 @@ class ShellrentAPI
         return $this->request('GET', '/service');
     }
 
+    public function service(string $id): array
+    {
+        return $this->request('GET', '/service/details/' . $id);
+    }
+
     public function request(string $method, string $url, array $option = []): array
     {
         $headers = [

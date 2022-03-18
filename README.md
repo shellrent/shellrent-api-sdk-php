@@ -13,5 +13,13 @@ $api = new Shellrent\Api\ShellrentAPI($username, $token);
 $api->purchases();
 ```
 
-
 ## Methods
+
+- `purchases()`
+- `services()`
+
+## Testing
+
+Copy `.env.example` into `.env` and fill in your API details. Then run the test suite with:
+
+```vendor/bin/phpunit```
